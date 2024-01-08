@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .md{
+           
+            width: 1250px;
+            height: 1250px;
+            display: grid;
+           
+            gap: 10px;
+            margin: 250px;
+            font-size: 55px;
+            
+        }
+        .item{
+            border: 1px solid;
+            justify-content: center;
+            align-items: center;
+            border-radius: 55px;
+            display: grid;
+            
+            
+        }
+        .r-1{
+            grid-column: 1 / span 3;
+            background: linear-gradient(red,yellow,green);
+            background-color: bisque;
+        }
+        .r-2{
+            grid-row: 2 / span 3;
+            background: linear-gradient(red,yellow);
+        }
+        .r-3{
+            background: linear-gradient(grey,blue);
+            
+        }
+        .r-4{
+           grid-row: 3 / span 3 ;
+           background: linear-gradient(pink,skyblue);
+        }
+        .r-5{
+           background: linear-gradient(lime,grey,rgb(191, 237, 54));
+        }
+        .r-6{
+            background: linear-gradient(blue,aqua);
+
+        }
+        .r-7{
+           grid-row: 3 / span 4;
+           background-color: beige;
+
+        }
+        .r-8{
+            grid-column: 1 / span 2 ;
+            background: linear-gradient(red,beige,green);
+
+        }
+
+    </style>
+</head>
+<body class="boby">
+    <div class="md">
+        <div class="r-1 item">1</div>
+        <div class="r-2 item">2</div>
+        <div class="r-3 item">3</div>
+        <div class="r-4 item">4</div>
+        <div class="r-5 item">5</div>
+        <div class="r-6  item">6</div>
+        <div class="r-7 item">7</div>
+        <div class="r-8 item">8</div>
+    </div>
+    
+</body>
+</html>
